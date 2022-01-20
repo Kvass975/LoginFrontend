@@ -43,6 +43,6 @@ form.addEventListener("submit", async (e)=>{
         return
     }else{
         alert("Konts veiksmigi izveidots");
-        window.location = '../login.html';
+        window.location = '../index.html';
     }
 })
