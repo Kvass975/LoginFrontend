@@ -14,6 +14,7 @@ form.addEventListener("submit", function(e){
 
 
 const loginFunction = async (eml, pass) => {
+    if(eml.length>24) return
     const request = await fetch(`https://loginbackend-rg.herokuapp.com/login`,{
         method: 'POST',
         headers: {
