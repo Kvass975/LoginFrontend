@@ -3,7 +3,7 @@ const divData = document.querySelector("#data-div")
 const logOut = document.querySelector("#log-out")
 
 if(!token){
-    window.location = '../login/login.html';
+    window.location = '../login.html';
 }
 
 const getUserData = async function(){

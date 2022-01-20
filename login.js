@@ -4,7 +4,7 @@ const submit = document.querySelector("#input_submit")
 const inputPassword = document.querySelector("#input_password")
 
 if(localStorage.getItem('token')!=null){
-    window.location = '../account/account.html';
+    window.location = '/account/account.html';
 }
 
 form.addEventListener("submit", function(e){
@@ -26,7 +26,7 @@ const loginFunction = async (eml, pass) => {
     if(!data.status==false){
         const token = data.token
         localStorage.setItem('token', token);
-        window.location = '../account/account.html';
+        window.location = '/account/account.html';
     }else{
         alert("Šāds konts nepastāv")
     }
