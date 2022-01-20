@@ -28,6 +28,6 @@ const loginFunction = async (eml, pass) => {
         localStorage.setItem('token', token);
         window.location = '/account/account.html';
     }else{
-        alert("Šāds konts nepastāv")
+        alert("Sads konts nepastav")
     }
 }

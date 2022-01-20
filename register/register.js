@@ -27,19 +27,19 @@ form.addEventListener("submit", async (e)=>{
     const response = await request.json()
     console.log(response)
     if(response.message=="IN"){
-        alert("Numurs ko jūs ievadījāt neatbilst prasībām")
+        alert("Numurs ko jus ievadijat neatbilst prasibam")
         return
     }
     else if(response.message=="WE"){
-        alert("Epasts ko jūs ievadījāt, jau eksistē datubāzē")
+        alert("Epasts ko jus ievadijat, jau eksistē datubaze")
         return
     }
     else if(response.message=="WU"){
-        alert("Lietotajvards ko jūs ievadijāt, jau eksistē datubāzē")
+        alert("Lietotajvards ko jus ievadijāa, jau eksiste datubaze")
         return
     }
     else if(response.message=="WN"){
-        alert("Numurs ko jūs ievadījāt, jau eksistē datubāzē")
+        alert("Numurs ko jus ievadijat, jau eksistē datubaze")
         return
     }else{
         alert("Konts veiksmigi izveidots");
